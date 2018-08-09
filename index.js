@@ -53,7 +53,7 @@ module.exports = (context, options = {}) => {
 
   let targets = userTargets
   if (targets === undefined) {
-    targets = buildTarget === 'server' ? { node: 'current' } : { ie: 9, uglify: true }
+    targets = buildTarget === 'server' ? { node: 'current' } : { ie: 9 }
   }
 
   let polyfills

@@ -11,7 +11,6 @@ All notable changes to this project will be documented in this file. See [standa
 * package namespace ([5c04902](https://github.com/nuxt/babel-preset-app/commit/5c04902))
 
 
-
 <a name="0.1.0"></a>
 # 0.1.0 (2018-08-09)
 
