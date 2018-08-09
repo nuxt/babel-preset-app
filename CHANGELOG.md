@@ -2,43 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-<a name="0.1.0"></a>
-# 0.1.0 (2018-08-09)
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/nuxt/babel-preset-app/compare/v0.1.0...v0.1.2) (2018-08-09)
 
 
-### Features
+### Bug Fixes
 
-* add babel-preset-app for nuxt ([ab0fe44](https://github.com/nuxt/babel-preset-app/commit/ab0fe44))
-
-
-
-<a name="0.1.0"></a>
-# 0.1.0 (2018-08-09)
-
-
-### Features
-
-* add babel-preset-app for nuxt ([ab0fe44](https://github.com/nuxt/babel-preset-app/commit/ab0fe44))
-
-
-
-<a name="0.1.0"></a>
-# 0.1.0 (2018-08-09)
-
-
-### Features
-
-* add babel-preset-app for nuxt ([ab0fe44](https://github.com/nuxt/babel-preset-app/commit/ab0fe44))
-
-
-
-<a name="0.1.0"></a>
-# 0.1.0 (2018-08-09)
-
-
-### Features
-
-* add babel-preset-app for nuxt ([ab0fe44](https://github.com/nuxt/babel-preset-app/commit/ab0fe44))
+* package namespace ([5c04902](https://github.com/nuxt/babel-preset-app/commit/5c04902))
 
 
 
