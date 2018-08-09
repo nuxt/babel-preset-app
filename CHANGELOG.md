@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/nuxt/babel-preset-app/compare/v0.1.3...v0.1.4) (2018-08-09)
+
+
+### Bug Fixes
+
+* remove rest spread proposal ([1bd01cf](https://github.com/nuxt/babel-preset-app/commit/1bd01cf))
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/nuxt/babel-preset-app/compare/v0.1.2...v0.1.3) (2018-08-09)
 
