@@ -82,8 +82,7 @@ module.exports = (context, options = {}) => {
   plugins.push(
     require('@babel/plugin-syntax-dynamic-import'),
     [require('@babel/plugin-proposal-decorators'), { legacy: decoratorsLegacy !== false }],
-    [require('@babel/plugin-proposal-class-properties'), { loose }],
-    [require('@babel/plugin-transform-object-rest-spread'), { useBuiltIns: useBuiltIns !== false }]
+    [require('@babel/plugin-proposal-class-properties'), { loose }]
   )
 
   // transform runtime, but only for helpers
