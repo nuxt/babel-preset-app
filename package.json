@@ -1,25 +1,27 @@
 {
-  "name": "@vue/babel-preset-app",
-  "version": "3.0.0-rc.12",
-  "description": "babel-preset-app for vue-cli",
+  "name": "@nuxt/babel-preset-app",
+  "version": "0.1.0",
+  "description": "babel-preset-app for nuxt.js",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/vue-cli.git"
+    "url": "git+https://github.com/nuxt/babel-preset-app.git"
   },
   "keywords": [
-    "vue",
-    "cli"
+    "nuxt",
+    "babel"
   ],
   "author": "Evan You",
+  "contributors": [
+    "Clark Du"
+  ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vuejs/vue-cli/issues"
+  "scripts": {
+    "release": "standard-version"
   },
-  "homepage": "https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/babel-preset-app#readme",
   "dependencies": {
     "@babel/core": "7.0.0-beta.56",
     "@babel/plugin-proposal-class-properties": "7.0.0-beta.56",
@@ -37,6 +39,7 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint-plugin-standard": "^3.1.0",
+    "standard-version": "^4.4.0"
   }
 }
