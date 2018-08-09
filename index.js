@@ -87,10 +87,7 @@ module.exports = (context, options = {}) => {
 
   // transform runtime, but only for helpers
   plugins.push([require('@babel/plugin-transform-runtime'), {
-    polyfill: false,
-    regenerator: useBuiltIns !== 'usage',
-    useBuiltIns: useBuiltIns !== false,
-    moduleName: path.dirname(require.resolve('@babel/runtime/package.json'))
+    regenerator: useBuiltIns !== 'usage'
   }])
 
   return {
