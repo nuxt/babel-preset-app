@@ -1,5 +1,5 @@
 {
-  "name": "@nuxt/babel-preset-app",
+  "name": "@nuxtjs/babel-preset-app",
   "version": "0.1.0",
   "description": "babel-preset-app for nuxt.js",
   "main": "index.js",
