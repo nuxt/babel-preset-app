@@ -38,23 +38,22 @@ module.exports = (context, options = {}) => {
     )
   }
 
+  const modern = !!options.modern
+
   const {
     buildTarget,
     loose = false,
     useBuiltIns = 'usage',
     modules = false,
     polyfills: userPolyfills,
-    targets: userTargets,
-    ignoreBrowserslistConfig = false,
+    ignoreBrowserslistConfig = modern,
     configPath,
     forceAllTransforms,
-    decoratorsLegacy,
-    modern = false
+    decoratorsLegacy
   } = options
 
-  let targets = userTargets
+  let targets = options.targets
   if (modern === true) {
-    ignoreBrowserslistConfig = true
     targets = { esmodules: true }
   } else if (targets === undefined) {
     targets = buildTarget === 'server' ? { node: 'current' } : { ie: 9 }
