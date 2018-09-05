@@ -48,16 +48,20 @@ module.exports = (context, options = {}) => {
     ignoreBrowserslistConfig = false,
     configPath,
     forceAllTransforms,
-    decoratorsLegacy
+    decoratorsLegacy,
+    modern = false
   } = options
 
   let targets = userTargets
-  if (targets === undefined) {
+  if (modern === true) {
+    ignoreBrowserslistConfig = true
+    targets = { esmodules: true }
+  } else if (targets === undefined) {
     targets = buildTarget === 'server' ? { node: 'current' } : { ie: 9 }
   }
 
   let polyfills
-  if (useBuiltIns === 'usage' && buildTarget === 'client') {
+  if (modern === false && useBuiltIns === 'usage' && buildTarget === 'client') {
     polyfills = getPolyfills(targets, userPolyfills || defaultPolyfills, {
       ignoreBrowserslistConfig,
       configPath
@@ -75,6 +79,7 @@ module.exports = (context, options = {}) => {
       targets,
       useBuiltIns,
       forceAllTransforms,
+      ignoreBrowserslistConfig,
       exclude: polyfills
     }
   ])
