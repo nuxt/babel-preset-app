@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/babel-preset-app",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "babel-preset-app for nuxt.js",
   "main": "index.js",
   "publishConfig": {
