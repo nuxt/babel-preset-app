@@ -49,7 +49,8 @@ module.exports = (context, options = {}) => {
     ignoreBrowserslistConfig = modern,
     configPath,
     forceAllTransforms,
-    decoratorsLegacy
+    decoratorsLegacy,
+    debug = false
   } = options
 
   let targets = options.targets
@@ -79,7 +80,8 @@ module.exports = (context, options = {}) => {
       useBuiltIns,
       forceAllTransforms,
       ignoreBrowserslistConfig,
-      exclude: polyfills
+      exclude: polyfills,
+      debug
     }
   ])
 
